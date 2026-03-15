@@ -1,0 +1,17 @@
+1. Invalid color names accepted.
+   Steps: Enter "blurple" as color and click Change Color.
+   Expected: Should show error message.
+   Actual: Changes to white or nothing happens.
+   Severity: Medium
+
+2. Empty input changes background.
+   Steps: Leave input empty and click Change Color.
+   Expected: Should prompt to enter a color.
+   Actual: Background turns white.
+   Severity: Low
+
+3. Reset sometimes fails.
+   Steps: Change color, click Reset.
+   Expected: Background restores original color.
+   Actual: Sometimes does not reset properly.
+   Severity: Medium

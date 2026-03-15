@@ -1,17 +1,17 @@
-1. Invalid color names accepted.
-   Steps: Enter "blurple" as color and click Change Color.
-   Expected: Should show error message.
-   Actual: Changes to white or nothing happens.
+1. Input color changes to a different color
+   Steps: Type "red" in the input and click "Change Color"
+   Expected: Background should become red
+   Actual: Background changes to green
    Severity: Medium
 
-2. Empty input changes background.
-   Steps: Leave input empty and click Change Color.
-   Expected: Should prompt to enter a color.
-   Actual: Background turns white.
+2. Typing an invalid color still changes background
+   Steps: Type "reed" in the input and click "Change Color"
+   Expected: Should show message "No such color" and background does not change
+   Actual: Background changed to "reed"
    Severity: Low
 
-3. Reset sometimes fails.
-   Steps: Change color, click Reset.
-   Expected: Background restores original color.
-   Actual: Sometimes does not reset properly.
-   Severity: Medium
+3. Empty input changes background
+   Steps: Leave input empty and click "Change Color"
+   Expected: Should prompt to enter a color
+   Actual: Background changes to white
+   Severity: Low
